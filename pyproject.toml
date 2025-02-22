@@ -1,9 +1,14 @@
-[project]
-name = "repl-nix-workspace"
+
+[tool.poetry]
+name = "jovian-careers-website"
 version = "0.1.0"
-description = "Add your description here"
-requires-python = ">=3.11"
-dependencies = [
-    "flask>=3.1.0",
-]
-[tool.poetry.dev-dependencies]
+description = "A careers website for Jovian"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+flask = "^3.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
