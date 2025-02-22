@@ -13,6 +13,6 @@
           {% endif %}
         </div>
       <div class="col-3">
-        <button type="button" class="btn btn-outline-primary btn-animate">Apply</button>
+        <button type="button" class="btn btn-outline-primary btn-animate" data-bs-toggle="modal" data-bs-target="#applyModal" onclick="applyToJob('{{job.id}}', '{{job.title}}')">Apply</button>
       </div>
     </div>

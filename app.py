@@ -40,4 +40,21 @@ def hello_world():
 def list_jobs():
     return jsonify(JOBS)
 
-app.run(host='0.0.0.0', debug=True)
+@app.route("/login", methods=['POST'])
+def login():
+    # Add authentication logic here
+    return redirect('/')
+
+@app.route("/signup", methods=['POST'])
+def signup():
+    # Add registration logic here
+    return redirect('/')
+
+@app.route("/apply", methods=['POST'])
+def apply():
+    # Add application handling logic here
+    return redirect('/')
+
+if __name__ == "__main__":
+    app.secret_key = 'your-secret-key'  # Required for sessions
+    app.run(host='0.0.0.0', debug=True)
