@@ -55,6 +55,11 @@ def apply():
     # Add application handling logic here
     return redirect('/')
 
+@app.route("/contact", methods=['POST'])
+def contact():
+    # Add contact form handling logic here
+    return redirect('/')
+
 if __name__ == "__main__":
     app.secret_key = 'your-secret-key'  # Required for sessions
     app.run(host='0.0.0.0', debug=True)
